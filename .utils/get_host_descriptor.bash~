@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NVIDIA_DIR=/proc/driver/nvidia
+
+if test ! -d $NVIDIA_DIR; then
+    echo "NVIDIA driver not installed yet. Driver must be installed on host first"
+    return -1
+fi
+
+# Get your current host nvidia driver version, e.g. 340.24
+nvidia_version=$(cat $NVIDIA_DIR/version | head -n 1 | awk '{ print $8 }')
+
