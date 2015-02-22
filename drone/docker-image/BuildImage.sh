@@ -1,7 +1,7 @@
 #!/bin/bash
 
 scriptpath=$(readlink -f "$0")
-utilpath=$(dirname $scriptpath)/../../utils
+utilpath=$(dirname $scriptpath)/../../.utils
 
 # Get the host descriptor
 bash $utilpath/get_host_descriptor.bash
