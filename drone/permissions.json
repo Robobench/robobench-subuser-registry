@@ -6,7 +6,8 @@
   // A list of directories the program should have Read/Write access to.
   // Paths are relative to your home. Ex: "Downloads" will access "$HOME/Downloads".
   ,"user-dirs"                 : []  // Default: []
-  // Allowed the program to display x11 windows.
+  // Allowed the program to display x11 windows. This will allow drone to build
+  // XOrg reliant devices until we iron out the xdummy issues
   ,"x11"                       : true        // Default: false
   // Allow the program access to your sound playing and recording.  
   ,"access-working-directory" : false        // Default: false
