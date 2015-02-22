@@ -19,6 +19,6 @@
   ,"privileged"                : true       // Default: false
   // This image must run as root
   ,"as-root"                   : true       // Default: false
-  // This image maps port 8000 to port 80
-  ,"ports"                     : ["8000-80"] // Default: []
+  // This image maps port 0.0.0.0:8000 to port 80
+  ,"ports"                     : ["8000:80"] // Default: []
 }
