@@ -12,3 +12,5 @@ mkdir -p ./subuser
 
 #the uuid is the first argument. Create the uuid file and make sure it is added in the build file
 echo $1 > ./subuser/uuid
+
+docker build -t $1 ./SubuserImageFile
