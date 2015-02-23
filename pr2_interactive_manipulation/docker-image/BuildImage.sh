@@ -10,9 +10,10 @@ mkdir -p $subuserpath
 
 # Get the host descriptor
 bash $utilpath/get_host_descriptor.bash $subuserpath 
-
+cp $utilpath/install_client_gpu.bash $subuserpath
 
 #the uuid is the first argument. Create the uuid file and make sure it is added in the build file
 echo $1 > ./subuser/uuid
+
 
 docker build -t $1 .

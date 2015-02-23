@@ -1,4 +1,5 @@
 #!/bin/bash
+# input is host descriptor path
 
 NVIDIA_DIR=/proc/driver/nvidia
 
@@ -16,6 +17,6 @@ xorg_version=$(xdpyinfo | grep "X.Org version" | awk '{print $3}')
 
 host_descriptor_file=host_descriptor.yml
 
-echo "#Host descriptor file" > $host_descriptor_file
-echo "nvidia: $nvidia_version" >> $host_descriptor_file
-echo "xorg: $xorg_version" >> $host_descriptor_file
+echo "#Host descriptor file" > $1/$host_descriptor_file
+echo "nvidia: $nvidia_version" >> $1/$host_descriptor_file
+echo "xorg: $xorg_version" >> $1/$host_descriptor_file
