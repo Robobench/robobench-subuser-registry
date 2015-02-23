@@ -9,11 +9,11 @@ MAINTAINER Jon Weisz <jon.weisz@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN sudo rm -rf /subuser
-ADD ./subuser /subuser_back
+ADD ./subuser /subuser
 ADD ./.hostdata/nvidia-driver.run /tmp/nvidia-driver.run
 
 
 
-RUN bash /subuser_back/install_client_gpu.bash
+RUN bash /subuser/install_client_gpu.bash
 
-ENTRYPOINT "/bin/bash ~/Dev/pr2_im_ws/pr2_im_launch.sh"
+ENTRYPOINT "/bin/bash"

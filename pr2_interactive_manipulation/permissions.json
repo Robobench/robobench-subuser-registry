@@ -2,14 +2,13 @@
   "description"                : "Modified version of Drone CI specialized for the Robobench project."
   ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
   // Path to executable within the docker image.
-  ,"executable"                : "/usr/local/bin/droned"
+  ,"executable"                : "/bin/bash"
   // A list of directories the program should have Read/Write access to.
   // Paths are relative to your home. Ex: "Downloads" will access "$HOME/Downloads".
   ,"user-dirs"                 : []  // Default: []
   // Allowed the program to display x11 windows. This will allow drone to build
   // XOrg reliant devices until we iron out the xdummy issues
   ,"x11"                       : true        // Default: false
-  // Allow the program access to your sound playing and recording.  
   ,"access-working-directory" : false        // Default: false
   // Allow the program access to the internet.
   ,"allow-network-access"      : true        // Default: false
@@ -18,7 +17,7 @@
   // an arbitrary graphics card
   ,"privileged"                : true       // Default: false
   // This image must run as root
-  ,"as-root"                   : true       // Default: false
+  ,"as-root"                   : false       // Default: false
   // This image maps port 0.0.0.0:8000 to port 80
-  ,"ports"                     : ["8000:80"] // Default: []
+  ,"ports"                     : [] // Default: []
 }

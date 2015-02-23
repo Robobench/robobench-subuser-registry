@@ -24,7 +24,7 @@ cp $utilpath/install_client_gpu.bash $subuserpath
 
 #the uuid is the first argument. Create the uuid file and make sure it is added in the build file
 echo subuseruuid $1
-echo $1 > ./subuser/uuid
+echo $1 > $buildpath/subuser/uuid
 
 
 docker build --no-cache -t $1 $buildpath
