@@ -23,6 +23,7 @@ cp -r $utilpath/../.hostdata/ $buildpath/.hostdata
 cp $utilpath/install_client_gpu.bash $subuserpath
 
 #the uuid is the first argument. Create the uuid file and make sure it is added in the build file
+echo subuseruuid $1
 echo $1 > ./subuser/uuid
 
 
