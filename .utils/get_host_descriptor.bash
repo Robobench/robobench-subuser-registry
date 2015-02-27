@@ -15,8 +15,9 @@ nvidia_version=$(cat $NVIDIA_DIR/version | head -n 1 | awk '{ print $8 }')
 xorg_version=$(xdpyinfo | grep "X.Org version" | awk '{print $3}')
 
 
-host_descriptor_file=host_descriptor.yml
+host_descriptor_file=$1/host_descriptor.yml
 
-echo "#Host descriptor file" > $1/$host_descriptor_file
-echo "nvidia: $nvidia_version" >> $1/$host_descriptor_file
-echo "xorg: $xorg_version" >> $1/$host_descriptor_file
+echo "{"> $host_descriptor_file
+echo "nvidia: $nvidia_version" >> $host_descriptor_file
+echo ",xorg: $xorg_version" >> $host_descriptor_file
+echo "}" >>  $host_descriptor_file
