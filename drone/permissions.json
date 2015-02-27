@@ -21,4 +21,5 @@
   ,"as-root"                   : true       // Default: false
   // This image maps port 0.0.0.0:8000 to port 80
   ,"ports"                     : ["8000:80"] // Default: []
+  ,"use-host-descriptor" : true
 }
