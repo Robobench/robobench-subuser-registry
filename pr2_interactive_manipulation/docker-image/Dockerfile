@@ -8,12 +8,5 @@ MAINTAINER Jon Weisz <jon.weisz@gmail.com>
 #
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN sudo rm -rf /subuser
-ADD ./subuser /subuser
-ADD ./.hostdata/nvidia-driver.run /tmp/nvidia-driver.run
-
-
-
-RUN bash /subuser/install_client_gpu.bash
 
 ENTRYPOINT "/bin/bash"
