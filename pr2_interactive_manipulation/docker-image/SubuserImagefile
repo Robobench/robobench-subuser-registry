@@ -7,7 +7,7 @@ MAINTAINER Jon Weisz <jon.weisz@gmail.com>
 #Builds the pr2-interactive-manipulation pipeline with some helpful scripts for running and profiling parts of the pipeline
 #
 
-ADD command_options.json /subuser/command_options.json
+#ADD command_options.json /subuser/command_options.json
 
 ENV DEBIAN_FRONTEND noninteractive
 
