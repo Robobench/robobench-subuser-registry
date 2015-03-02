@@ -1,5 +1,5 @@
 {
-  "description"                : "Modified version of Drone CI specialized for the Robobench project."
+  "description"                : "Demo app of reem robot completing grasping mission."
   ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
   // Path to executable within the docker image.
   ,"executable"                : "/home/tester/Dev/reem_sim_ws/reem_sim_ws_scripts/reem_grasping_launch.bash"
@@ -15,7 +15,8 @@
   // Allow privileged access to the devices in /dev. This is never safe,
   // but it is by far the simplest way to generically handle 
   // an arbitrary graphics card
-  ,"privileged"                : false       // Default: false
+  ,"graphics-card"             : true        // Default false
+  ,"privileged"                : false       // If value is true, garbage joystick data may be read
   // This image must run as root
   ,"as-root"                   : false       // Default: false
   // This image maps port 0.0.0.0:8000 to port 80
