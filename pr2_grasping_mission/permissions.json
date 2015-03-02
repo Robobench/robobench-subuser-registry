@@ -15,7 +15,7 @@
   // Allow privileged access to the devices in /dev. This is never safe,
   // but it is by far the simplest way to generically handle 
   // an arbitrary graphics card
-  ,"privileged"                : true       // Default: false
+  ,"privileged"                : false       // Default: false
   // This image must run as root
   ,"as-root"                   : false       // Default: false
   // This image maps port 0.0.0.0:8000 to port 80
