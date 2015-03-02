@@ -1,0 +1,24 @@
+{
+  "description"                : "Modified version of Drone CI specialized for the Robobench project."
+  ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
+  // Path to executable within the docker image.
+  ,"executable"                : "/home/tester/Dev/run_test_walking.bash"
+  // A list of directories the program should have Read/Write access to.+
+  // Paths are relative to your home. Ex: "Downloads" will access "$HOME/Downloads".
+  ,"user-dirs"                 : []  // Default: []
+  // Allowed the program to display x11 windows. This will allow drone to build
+  // XOrg reliant devices until we iron out the xdummy issues
+  ,"x11"                       : true        // Default: false
+  ,"access-working-directory" : false        // Default: false
+  // Allow the program access to the internet.
+  ,"allow-network-access"      : true        // Default: false
+  // Allow privileged access to the devices in /dev. This is never safe,
+  // but it is by far the simplest way to generically handle 
+  // an arbitrary graphics card
+  ,"graphics-card"             : true            
+  ,"privileged"                : false       // Default: false
+  // This image must run as root
+  ,"as-root"                   : false       // Default: false
+  // This image maps port 0.0.0.0:8000 to port 80
+  ,"ports"                     : [] // Default: []
+}
