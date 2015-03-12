@@ -12,11 +12,11 @@
   ,"access-working-directory" : false        // Default: false
   // Allow the program access to the internet.
   ,"allow-network-access"      : true        // Default: false
-  // Allow privileged access to the devices in /dev. This is never safe,
-  // but it is by far the simplest way to generically handle 
-  // an arbitrary graphics card
-  ,"privileged"                : true       // Default: false
-  // This image must run as root
+  // Allow privileged access to the devices in /dev. 
+ ,"privileged"                : false       // Default: false
+  // Allow access to the GPU
+ ,"graphics-card"             : true            
+  // Whether this image must run as root    
   ,"as-root"                   : false       // Default: false
   // This image maps port 0.0.0.0:8000 to port 80
   ,"ports"                     : [] // Default: []
