@@ -1,5 +1,5 @@
 {
-  "description"                : "Modified version of Drone CI specialized for the Robobench project."
+  "description"                : "PR2 robot grasping an object using the interactive manipulation pipeline in a Gazebo simulation."
   ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
   // Path to executable within the docker image.
   ,"executable"                : "/home/tester/Dev/pr2_im_ws/pr2_im_launch.sh"

@@ -1,5 +1,5 @@
 {
-  "description"                : "Modified version of Drone CI specialized for the Robobench project."
+  "description"                : "hrpsys simulator framework with simple robot taking a few steps"
   ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
   // Path to executable within the docker image.
   ,"executable"                : "/home/tester/Dev/run_test_walking.bash"

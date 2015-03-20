@@ -1,5 +1,5 @@
 {
-  "description"                : "Demo app of reem robot completing grasping mission."
+  "description"                : "REEM robot grasping an object in a Gazebo simulation"
   ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
   // Path to executable within the docker image.
   ,"executable"                : "/home/tester/Dev/reem_sim_ws/reem_sim_ws_scripts/reem_grasping_launch.bash"

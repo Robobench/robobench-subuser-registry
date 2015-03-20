@@ -1,5 +1,5 @@
 {
-  "description"                : "Modified version of Drone CI specialized for the Robobench project."
+  "description"                : "REEM robot navigating between two rooms in a Gazebo simulation"
   ,"maintainer"                : "Jonathan Weisz <jon.weisz (at) gmail dot com>"
   // Path to executable within the docker image.
   ,"executable"                : "/home/tester/Dev/reem_sim_ws/reem_sim_ws_scripts/reem_navigation_launch.bash"
