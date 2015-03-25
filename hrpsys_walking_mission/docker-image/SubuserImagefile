@@ -1,4 +1,4 @@
-FROM jonweisz/ubuntu-ros-devel:hydro-precise-hrpsys-tutorials-nvidia
+FROM jonweisz/ubuntu-ros-devel:hydro-precise-hrpsys
 
 MAINTAINER Jon Weisz <jon.weisz@gmail.com>
 #Builds the pr2-interactive-manipulation pipeline with some helpful scripts for running and profiling parts of the pipeline
